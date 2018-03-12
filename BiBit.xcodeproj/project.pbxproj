@@ -15,13 +15,20 @@
 		3B68181D20505EDA00D5B971 /* BiBitCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B68181620505EDA00D5B971 /* BiBitCore.framework */; };
 		3B68181E20505EDA00D5B971 /* BiBitCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B68181620505EDA00D5B971 /* BiBitCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B6818282050655800D5B971 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6818272050655800D5B971 /* libz.tbd */; };
-		3B68182A2050665900D5B971 /* BiBitCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818292050665900D5B971 /* BiBitCore.swift */; };
-		3B6818362050ADFA00D5B971 /* BiBitCoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818352050ADFA00D5B971 /* BiBitCoreConfig.swift */; };
-		3B6818432050AF6E00D5B971 /* BiBitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818412050AF6E00D5B971 /* BiBitService.swift */; };
-		3B6818472050AFDC00D5B971 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818462050AFDB00D5B971 /* WebSocket.swift */; };
 		3B6818492050B02100D5B971 /* CoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818482050B02100D5B971 /* CoreConfig.swift */; };
-		3B68184B2052E05000D5B971 /* BiBitModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68184A2052E05000D5B971 /* BiBitModels.swift */; };
-		3B68184D2053258300D5B971 /* BiBitSheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68184C2053258300D5B971 /* BiBitSheduler.swift */; };
+		3B68185A2053484700D5B971 /* BiBitDOMView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6818532053484700D5B971 /* BiBitDOMView.framework */; };
+		3B68185B2053484700D5B971 /* BiBitDOMView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6818532053484700D5B971 /* BiBitDOMView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3B6818602053488D00D5B971 /* BiBitDOMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68185F2053488D00D5B971 /* BiBitDOMView.swift */; };
+		3B68186A2054142E00D5B971 /* BiBitCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818642054142D00D5B971 /* BiBitCore.swift */; };
+		3B68186B2054142E00D5B971 /* BiBitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818652054142E00D5B971 /* BiBitService.swift */; };
+		3B68186C2054142E00D5B971 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818662054142E00D5B971 /* WebSocket.swift */; };
+		3B68186D2054142E00D5B971 /* BiBitSheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818672054142E00D5B971 /* BiBitSheduler.swift */; };
+		3B68186E2054142E00D5B971 /* BiBitCoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818682054142E00D5B971 /* BiBitCoreConfig.swift */; };
+		3B68186F2054142E00D5B971 /* BiBitModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818692054142E00D5B971 /* BiBitModels.swift */; };
+		3B681873205417B000D5B971 /* BiBitDOMViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B681872205417B000D5B971 /* BiBitDOMViewCell.swift */; };
+		3B6818752055D7EA00D5B971 /* BiBitDOMViewDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818742055D7EA00D5B971 /* BiBitDOMViewDataSet.swift */; };
+		3B6818772055DA6B00D5B971 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818762055DA6B00D5B971 /* UITableView+Extension.swift */; };
+		3B6818792055DB5800D5B971 /* BiBitDOMViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818782055DB5800D5B971 /* BiBitDOMViewPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +38,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3B68181520505EDA00D5B971;
 			remoteInfo = BiBitCore;
+		};
+		3B6818582053484700D5B971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B6817F420505E7C00D5B971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B6818522053484700D5B971;
+			remoteInfo = BiBitDOMView;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -42,6 +56,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3B68181E20505EDA00D5B971 /* BiBitCore.framework in Embed Frameworks */,
+				3B68185B2053484700D5B971 /* BiBitDOMView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,13 +74,20 @@
 		3B68181620505EDA00D5B971 /* BiBitCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BiBitCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B68181920505EDA00D5B971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B6818272050655800D5B971 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		3B6818292050665900D5B971 /* BiBitCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BiBitCore.swift; path = BiBitCore/Classes/BiBitCore.swift; sourceTree = SOURCE_ROOT; };
-		3B6818352050ADFA00D5B971 /* BiBitCoreConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BiBitCoreConfig.swift; path = BiBitCore/Classes/BiBitCoreConfig.swift; sourceTree = SOURCE_ROOT; };
-		3B6818412050AF6E00D5B971 /* BiBitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BiBitService.swift; path = BiBitCore/Classes/BiBitService.swift; sourceTree = SOURCE_ROOT; };
-		3B6818462050AFDB00D5B971 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = BiBitCore/Classes/WebSocket.swift; sourceTree = SOURCE_ROOT; };
 		3B6818482050B02100D5B971 /* CoreConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreConfig.swift; sourceTree = "<group>"; };
-		3B68184A2052E05000D5B971 /* BiBitModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BiBitModels.swift; path = BiBitCore/Classes/BiBitModels.swift; sourceTree = SOURCE_ROOT; };
-		3B68184C2053258300D5B971 /* BiBitSheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BiBitSheduler.swift; path = BiBitCore/Classes/BiBitSheduler.swift; sourceTree = SOURCE_ROOT; };
+		3B6818532053484700D5B971 /* BiBitDOMView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BiBitDOMView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6818562053484700D5B971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B68185F2053488D00D5B971 /* BiBitDOMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiBitDOMView.swift; sourceTree = "<group>"; };
+		3B6818642054142D00D5B971 /* BiBitCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiBitCore.swift; sourceTree = "<group>"; };
+		3B6818652054142E00D5B971 /* BiBitService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiBitService.swift; sourceTree = "<group>"; };
+		3B6818662054142E00D5B971 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		3B6818672054142E00D5B971 /* BiBitSheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiBitSheduler.swift; sourceTree = "<group>"; };
+		3B6818682054142E00D5B971 /* BiBitCoreConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiBitCoreConfig.swift; sourceTree = "<group>"; };
+		3B6818692054142E00D5B971 /* BiBitModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiBitModels.swift; sourceTree = "<group>"; };
+		3B681872205417B000D5B971 /* BiBitDOMViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiBitDOMViewCell.swift; sourceTree = "<group>"; };
+		3B6818742055D7EA00D5B971 /* BiBitDOMViewDataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiBitDOMViewDataSet.swift; sourceTree = "<group>"; };
+		3B6818762055DA6B00D5B971 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		3B6818782055DB5800D5B971 /* BiBitDOMViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiBitDOMViewPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B68181D20505EDA00D5B971 /* BiBitCore.framework in Frameworks */,
+				3B68185A2053484700D5B971 /* BiBitDOMView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +108,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B68184F2053484700D5B971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,6 +123,7 @@
 			children = (
 				3B6817FE20505E7C00D5B971 /* BiBit */,
 				3B68181720505EDA00D5B971 /* BiBitCore */,
+				3B6818542053484700D5B971 /* BiBitDOMView */,
 				3B6817FD20505E7C00D5B971 /* Products */,
 				3B6818262050655800D5B971 /* Frameworks */,
 			);
@@ -103,6 +134,7 @@
 			children = (
 				3B6817FC20505E7C00D5B971 /* BiBit.app */,
 				3B68181620505EDA00D5B971 /* BiBitCore.framework */,
+				3B6818532053484700D5B971 /* BiBitDOMView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,24 +156,10 @@
 		3B68181720505EDA00D5B971 /* BiBitCore */ = {
 			isa = PBXGroup;
 			children = (
-				3B681825205062E100D5B971 /* Classes */,
+				3B6818702054143700D5B971 /* Classes */,
 				3B68181920505EDA00D5B971 /* Info.plist */,
 			);
 			path = BiBitCore;
-			sourceTree = "<group>";
-		};
-		3B681825205062E100D5B971 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3B6818452050AF7700D5B971 /* WebSocket */,
-				3B68184A2052E05000D5B971 /* BiBitModels.swift */,
-				3B6818352050ADFA00D5B971 /* BiBitCoreConfig.swift */,
-				3B6818412050AF6E00D5B971 /* BiBitService.swift */,
-				3B68184C2053258300D5B971 /* BiBitSheduler.swift */,
-				3B6818292050665900D5B971 /* BiBitCore.swift */,
-			);
-			name = Classes;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		3B6818262050655800D5B971 /* Frameworks */ = {
@@ -152,10 +170,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3B6818452050AF7700D5B971 /* WebSocket */ = {
+		3B6818542053484700D5B971 /* BiBitDOMView */ = {
 			isa = PBXGroup;
 			children = (
-				3B6818462050AFDB00D5B971 /* WebSocket.swift */,
+				3B6818612053489200D5B971 /* Classes */,
+				3B6818562053484700D5B971 /* Info.plist */,
+			);
+			path = BiBitDOMView;
+			sourceTree = "<group>";
+		};
+		3B6818612053489200D5B971 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3B68185F2053488D00D5B971 /* BiBitDOMView.swift */,
+				3B6818742055D7EA00D5B971 /* BiBitDOMViewDataSet.swift */,
+				3B681872205417B000D5B971 /* BiBitDOMViewCell.swift */,
+				3B6818782055DB5800D5B971 /* BiBitDOMViewPage.swift */,
+				3B6818762055DA6B00D5B971 /* UITableView+Extension.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3B6818702054143700D5B971 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3B681871205414A400D5B971 /* WebSocket */,
+				3B6818682054142E00D5B971 /* BiBitCoreConfig.swift */,
+				3B6818692054142E00D5B971 /* BiBitModels.swift */,
+				3B6818652054142E00D5B971 /* BiBitService.swift */,
+				3B6818672054142E00D5B971 /* BiBitSheduler.swift */,
+				3B6818642054142D00D5B971 /* BiBitCore.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3B681871205414A400D5B971 /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				3B6818662054142E00D5B971 /* WebSocket.swift */,
 			);
 			path = WebSocket;
 			sourceTree = "<group>";
@@ -164,6 +216,13 @@
 
 /* Begin PBXHeadersBuildPhase section */
 		3B68181320505EDA00D5B971 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6818502053484700D5B971 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -186,6 +245,7 @@
 			);
 			dependencies = (
 				3B68181C20505EDA00D5B971 /* PBXTargetDependency */,
+				3B6818592053484700D5B971 /* PBXTargetDependency */,
 			);
 			name = BiBit;
 			productName = BiBit;
@@ -210,6 +270,24 @@
 			productReference = 3B68181620505EDA00D5B971 /* BiBitCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		3B6818522053484700D5B971 /* BiBitDOMView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B68185E2053484700D5B971 /* Build configuration list for PBXNativeTarget "BiBitDOMView" */;
+			buildPhases = (
+				3B68184E2053484700D5B971 /* Sources */,
+				3B68184F2053484700D5B971 /* Frameworks */,
+				3B6818502053484700D5B971 /* Headers */,
+				3B6818512053484700D5B971 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BiBitDOMView;
+			productName = BiBitDOMView;
+			productReference = 3B6818532053484700D5B971 /* BiBitDOMView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -225,6 +303,11 @@
 						ProvisioningStyle = Automatic;
 					};
 					3B68181520505EDA00D5B971 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					3B6818522053484700D5B971 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
@@ -246,6 +329,7 @@
 			targets = (
 				3B6817FB20505E7C00D5B971 /* BiBit */,
 				3B68181520505EDA00D5B971 /* BiBitCore */,
+				3B6818522053484700D5B971 /* BiBitDOMView */,
 			);
 		};
 /* End PBXProject section */
@@ -262,6 +346,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3B68181420505EDA00D5B971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6818512053484700D5B971 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,12 +376,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B6818362050ADFA00D5B971 /* BiBitCoreConfig.swift in Sources */,
-				3B6818472050AFDC00D5B971 /* WebSocket.swift in Sources */,
-				3B6818432050AF6E00D5B971 /* BiBitService.swift in Sources */,
-				3B68182A2050665900D5B971 /* BiBitCore.swift in Sources */,
-				3B68184D2053258300D5B971 /* BiBitSheduler.swift in Sources */,
-				3B68184B2052E05000D5B971 /* BiBitModels.swift in Sources */,
+				3B68186D2054142E00D5B971 /* BiBitSheduler.swift in Sources */,
+				3B68186E2054142E00D5B971 /* BiBitCoreConfig.swift in Sources */,
+				3B68186F2054142E00D5B971 /* BiBitModels.swift in Sources */,
+				3B68186B2054142E00D5B971 /* BiBitService.swift in Sources */,
+				3B68186C2054142E00D5B971 /* WebSocket.swift in Sources */,
+				3B68186A2054142E00D5B971 /* BiBitCore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B68184E2053484700D5B971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6818752055D7EA00D5B971 /* BiBitDOMViewDataSet.swift in Sources */,
+				3B681873205417B000D5B971 /* BiBitDOMViewCell.swift in Sources */,
+				3B6818602053488D00D5B971 /* BiBitDOMView.swift in Sources */,
+				3B6818772055DA6B00D5B971 /* UITableView+Extension.swift in Sources */,
+				3B6818792055DB5800D5B971 /* BiBitDOMViewPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +404,11 @@
 			isa = PBXTargetDependency;
 			target = 3B68181520505EDA00D5B971 /* BiBitCore */;
 			targetProxy = 3B68181B20505EDA00D5B971 /* PBXContainerItemProxy */;
+		};
+		3B6818592053484700D5B971 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B6818522053484700D5B971 /* BiBitDOMView */;
+			targetProxy = 3B6818582053484700D5B971 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -514,6 +622,57 @@
 			};
 			name = Release;
 		};
+		3B68185C2053484700D5B971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2YCCX64PW6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BiBitDOMView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iEvgen.Podkorytov.BiBitDOMView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B68185D2053484700D5B971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2YCCX64PW6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BiBitDOMView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iEvgen.Podkorytov.BiBitDOMView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -540,6 +699,15 @@
 			buildConfigurations = (
 				3B68182020505EDA00D5B971 /* Debug */,
 				3B68182120505EDA00D5B971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B68185E2053484700D5B971 /* Build configuration list for PBXNativeTarget "BiBitDOMView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B68185C2053484700D5B971 /* Debug */,
+				3B68185D2053484700D5B971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
