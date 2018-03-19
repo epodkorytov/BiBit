@@ -80,10 +80,11 @@ public class BiBitService {
     
     fileprivate func messageReceive(_ message: String) {
         //print("reseive => \(message)")
+        
         let stack = message.split { separator -> Bool in
             return separator == "[" || separator == "]"
         }
-        
+
         let items = stack.flatMap { item -> OBItem? in
             let args = item.split(separator: ",")
             if let price = Int(args.first.map({String($0)})!), let amount = Double(args.last.map({String($0)})!) {
@@ -91,7 +92,7 @@ public class BiBitService {
             }
             return nil
         }
-        
+
         //
         dom.update(items)
     }

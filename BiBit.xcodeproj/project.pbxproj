@@ -25,10 +25,12 @@
 		3B68186D2054142E00D5B971 /* BiBitSheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818672054142E00D5B971 /* BiBitSheduler.swift */; };
 		3B68186E2054142E00D5B971 /* BiBitCoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818682054142E00D5B971 /* BiBitCoreConfig.swift */; };
 		3B68186F2054142E00D5B971 /* BiBitModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818692054142E00D5B971 /* BiBitModels.swift */; };
-		3B681873205417B000D5B971 /* BiBitDOMViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B681872205417B000D5B971 /* BiBitDOMViewCell.swift */; };
 		3B6818752055D7EA00D5B971 /* BiBitDOMViewDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818742055D7EA00D5B971 /* BiBitDOMViewDataSet.swift */; };
-		3B6818772055DA6B00D5B971 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818762055DA6B00D5B971 /* UITableView+Extension.swift */; };
-		3B6818792055DB5800D5B971 /* BiBitDOMViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818782055DB5800D5B971 /* BiBitDOMViewPage.swift */; };
+		3B68187B2057641500D5B971 /* BiBitDOMGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68187A2057641500D5B971 /* BiBitDOMGraph.swift */; };
+		3B68187D2057E7AD00D5B971 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3B68187C2057E7AD00D5B971 /* Cartfile */; };
+		3B68187F2057EDF500D5B971 /* ScrollableGraphView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B68187E2057EDF500D5B971 /* ScrollableGraphView.framework */; };
+		3B6818812057F70000D5B971 /* ScrollableGraphView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B68187E2057EDF500D5B971 /* ScrollableGraphView.framework */; };
+		3B6818822057F70000D5B971 /* ScrollableGraphView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B68187E2057EDF500D5B971 /* ScrollableGraphView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3B6818822057F70000D5B971 /* ScrollableGraphView.framework in Embed Frameworks */,
 				3B68181E20505EDA00D5B971 /* BiBitCore.framework in Embed Frameworks */,
 				3B68185B2053484700D5B971 /* BiBitDOMView.framework in Embed Frameworks */,
 			);
@@ -84,10 +87,10 @@
 		3B6818672054142E00D5B971 /* BiBitSheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiBitSheduler.swift; sourceTree = "<group>"; };
 		3B6818682054142E00D5B971 /* BiBitCoreConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiBitCoreConfig.swift; sourceTree = "<group>"; };
 		3B6818692054142E00D5B971 /* BiBitModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiBitModels.swift; sourceTree = "<group>"; };
-		3B681872205417B000D5B971 /* BiBitDOMViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiBitDOMViewCell.swift; sourceTree = "<group>"; };
 		3B6818742055D7EA00D5B971 /* BiBitDOMViewDataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiBitDOMViewDataSet.swift; sourceTree = "<group>"; };
-		3B6818762055DA6B00D5B971 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
-		3B6818782055DB5800D5B971 /* BiBitDOMViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiBitDOMViewPage.swift; sourceTree = "<group>"; };
+		3B68187A2057641500D5B971 /* BiBitDOMGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiBitDOMGraph.swift; sourceTree = "<group>"; };
+		3B68187C2057E7AD00D5B971 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = BiBitDOMView/Cartfile; sourceTree = SOURCE_ROOT; };
+		3B68187E2057EDF500D5B971 /* ScrollableGraphView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScrollableGraphView.framework; path = BiBitDOMView/Carthage/Build/iOS/ScrollableGraphView.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B6818812057F70000D5B971 /* ScrollableGraphView.framework in Frameworks */,
 				3B68181D20505EDA00D5B971 /* BiBitCore.framework in Frameworks */,
 				3B68185A2053484700D5B971 /* BiBitDOMView.framework in Frameworks */,
 			);
@@ -112,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B68187F2057EDF500D5B971 /* ScrollableGraphView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +170,7 @@
 		3B6818262050655800D5B971 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B68187E2057EDF500D5B971 /* ScrollableGraphView.framework */,
 				3B6818272050655800D5B971 /* libz.tbd */,
 			);
 			name = Frameworks;
@@ -184,9 +190,8 @@
 			children = (
 				3B68185F2053488D00D5B971 /* BiBitDOMView.swift */,
 				3B6818742055D7EA00D5B971 /* BiBitDOMViewDataSet.swift */,
-				3B681872205417B000D5B971 /* BiBitDOMViewCell.swift */,
-				3B6818782055DB5800D5B971 /* BiBitDOMViewPage.swift */,
-				3B6818762055DA6B00D5B971 /* UITableView+Extension.swift */,
+				3B68187A2057641500D5B971 /* BiBitDOMGraph.swift */,
+				3B68187C2057E7AD00D5B971 /* Cartfile */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B68187D2057E7AD00D5B971 /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,10 +396,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B6818752055D7EA00D5B971 /* BiBitDOMViewDataSet.swift in Sources */,
-				3B681873205417B000D5B971 /* BiBitDOMViewCell.swift in Sources */,
 				3B6818602053488D00D5B971 /* BiBitDOMView.swift in Sources */,
-				3B6818772055DA6B00D5B971 /* UITableView+Extension.swift in Sources */,
-				3B6818792055DB5800D5B971 /* BiBitDOMViewPage.swift in Sources */,
+				3B68187B2057641500D5B971 /* BiBitDOMGraph.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +550,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YCCX64PW6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BiBitDOMView/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BiBit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iEvgen.Podkorytov.BiBit;
@@ -562,6 +570,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YCCX64PW6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BiBitDOMView/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BiBit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iEvgen.Podkorytov.BiBit;
@@ -634,6 +646,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BiBitDOMView/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BiBitDOMView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -660,6 +676,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BiBitDOMView/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BiBitDOMView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

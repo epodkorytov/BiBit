@@ -23,22 +23,28 @@ public class Dom {
     
     public var didUpdated: (() -> Void)?
     
+    fileprivate var domLoaded: Bool
+    
     public init(){
         self.items = Array<OBItem>()
+        domLoaded = false
     }
     
     public func update(_ items: Array<OBItem>) {
-        for item in items {
-            if let idx = self.items.index(where: { $0.price == item.price }) {
-                self.items[idx] = item
-            } else {
-                self.items.append(item)
+        let queue = DispatchQueue.global(qos: .background)
+        queue.async{
+            DispatchQueue.main.async {
+                for item in items {
+                    if let idx = self.items.index(where: { $0.price == item.price }) {
+                        self.items[idx] = item
+                    } else if !self.domLoaded {
+                        self.items.append(item)
+                    }
+                }
+                
+                self.domLoaded = true
             }
+            self.didUpdated?()
         }
-        
-        self.items = self.items.sorted(by: {$0.price > $1.price})
-        //
-        
-        self.didUpdated?()
     }
 }
