@@ -27,10 +27,6 @@
 		3B68186F2054142E00D5B971 /* BiBitModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818692054142E00D5B971 /* BiBitModels.swift */; };
 		3B6818752055D7EA00D5B971 /* BiBitDOMViewDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6818742055D7EA00D5B971 /* BiBitDOMViewDataSet.swift */; };
 		3B68187B2057641500D5B971 /* BiBitDOMGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B68187A2057641500D5B971 /* BiBitDOMGraph.swift */; };
-		3B68187D2057E7AD00D5B971 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3B68187C2057E7AD00D5B971 /* Cartfile */; };
-		3B68187F2057EDF500D5B971 /* ScrollableGraphView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B68187E2057EDF500D5B971 /* ScrollableGraphView.framework */; };
-		3B6818812057F70000D5B971 /* ScrollableGraphView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B68187E2057EDF500D5B971 /* ScrollableGraphView.framework */; };
-		3B6818822057F70000D5B971 /* ScrollableGraphView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B68187E2057EDF500D5B971 /* ScrollableGraphView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +53,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3B6818822057F70000D5B971 /* ScrollableGraphView.framework in Embed Frameworks */,
 				3B68181E20505EDA00D5B971 /* BiBitCore.framework in Embed Frameworks */,
 				3B68185B2053484700D5B971 /* BiBitDOMView.framework in Embed Frameworks */,
 			);
@@ -89,7 +84,6 @@
 		3B6818692054142E00D5B971 /* BiBitModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiBitModels.swift; sourceTree = "<group>"; };
 		3B6818742055D7EA00D5B971 /* BiBitDOMViewDataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiBitDOMViewDataSet.swift; sourceTree = "<group>"; };
 		3B68187A2057641500D5B971 /* BiBitDOMGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiBitDOMGraph.swift; sourceTree = "<group>"; };
-		3B68187C2057E7AD00D5B971 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = BiBitDOMView/Cartfile; sourceTree = SOURCE_ROOT; };
 		3B68187E2057EDF500D5B971 /* ScrollableGraphView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScrollableGraphView.framework; path = BiBitDOMView/Carthage/Build/iOS/ScrollableGraphView.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +92,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B6818812057F70000D5B971 /* ScrollableGraphView.framework in Frameworks */,
 				3B68181D20505EDA00D5B971 /* BiBitCore.framework in Frameworks */,
 				3B68185A2053484700D5B971 /* BiBitDOMView.framework in Frameworks */,
 			);
@@ -116,7 +109,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B68187F2057EDF500D5B971 /* ScrollableGraphView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +183,6 @@
 				3B68185F2053488D00D5B971 /* BiBitDOMView.swift */,
 				3B6818742055D7EA00D5B971 /* BiBitDOMViewDataSet.swift */,
 				3B68187A2057641500D5B971 /* BiBitDOMGraph.swift */,
-				3B68187C2057E7AD00D5B971 /* Cartfile */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -361,7 +352,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B68187D2057E7AD00D5B971 /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +474,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -535,7 +525,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
