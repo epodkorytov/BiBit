@@ -56,7 +56,6 @@ public class BiBitDOMView: UIView {
             if let dataSet = self.dataSet {
                 DispatchQueue.main.async {
                     self.bidView.dataSet = dataSet.bid
-                    
                 }
                 DispatchQueue.main.async {
                     self.askView.dataSet = dataSet.ask

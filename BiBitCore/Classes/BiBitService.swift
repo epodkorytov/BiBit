@@ -85,7 +85,7 @@ public class BiBitService {
             return separator == "[" || separator == "]"
         }
 
-        let items = stack.flatMap { item -> OBItem? in
+        let items = stack.compactMap { item -> OBItem? in
             let args = item.split(separator: ",")
             if let price = Int(args.first.map({String($0)})!), let amount = Double(args.last.map({String($0)})!) {
                 return OBItem(price: price, amount: amount)

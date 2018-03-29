@@ -24,10 +24,10 @@ class ViewController: UIViewController {
             //print("DOM updated => bid.max is \(String(format: "%.5f", (BiBitCore.shared.service?.dom.maxBid)!)), bid.cnt is \(String(describing: BiBitCore.shared.service?.dom.bid.count)), ask.max is \(String(format: "%.5f", (BiBitCore.shared.service?.dom.maxAsk)!)), ask.cnt is \(String(describing: BiBitCore.shared.service?.dom.ask.count))")
             
             let maxBid = BiBitCore.shared.service?.dom.maxBid
-            let bid = BiBitCore.shared.service?.dom.bid.flatMap({ return BiBitDOMViewDataSetItem(price: $0.price, amount: $0.amount, max: maxBid!)})
+            let bid = BiBitCore.shared.service?.dom.bid?.compactMap({ return BiBitDOMViewDataSetItem(price: $0.price, amount: $0.amount, max: maxBid!)})
             
             let maxAsk = BiBitCore.shared.service?.dom.maxAsk
-            let ask = BiBitCore.shared.service?.dom.ask.flatMap({ return BiBitDOMViewDataSetItem(price: $0.price, amount: $0.amount, max: maxAsk!)})
+            let ask = BiBitCore.shared.service?.dom.ask?.compactMap({ return BiBitDOMViewDataSetItem(price: $0.price, amount: $0.amount, max: maxAsk!)})
             
             domView.dataSet = BiBitDOMViewDataSet(bid: bid!, ask: ask!)
         }

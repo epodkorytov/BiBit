@@ -16,8 +16,8 @@ public struct OBItem: Codable {
 public class Dom {
     public var items: Array<OBItem>
     
-    public var bid: Array<OBItem> { return items.filter({$0.amount >= 0.0}).sorted{ $0.amount <= $1.amount} }
-    public var ask: Array<OBItem> { return items.filter({$0.amount < 0.0}).sorted{ $0.amount >= $1.amount} }
+    public var bid: Array<OBItem>? { return items.filter({$0.amount >= 0.0}).sorted{ $0.amount <= $1.amount} }
+    public var ask: Array<OBItem>? { return items.filter({$0.amount < 0.0}).sorted{ $0.amount >= $1.amount} }
     public var maxBid: Double { return items.max(by: {$0.amount <= $1.amount})?.amount ?? 0}
     public var maxAsk: Double { return items.min(by: {$0.amount < $1.amount})?.amount ?? 0}
     
