@@ -8,9 +8,14 @@
 
 import Foundation
 
-public struct OBItem: Codable {
-    public var price: Int = 0
-    public var amount: Double = 0.0
+public class OBItem: Codable {
+    public var price: Int
+    public var amount: Double
+    
+    public init(price: Int, amount: Double){
+        self.price = price
+        self.amount = amount
+    }
 }
 
 public class Dom {
@@ -18,8 +23,16 @@ public class Dom {
     
     public var bid: Array<OBItem>? { return items.filter({$0.amount >= 0.0}).sorted{ $0.amount <= $1.amount} }
     public var ask: Array<OBItem>? { return items.filter({$0.amount < 0.0}).sorted{ $0.amount >= $1.amount} }
-    public var maxBid: Double { return items.max(by: {$0.amount <= $1.amount})?.amount ?? 0}
-    public var maxAsk: Double { return items.min(by: {$0.amount < $1.amount})?.amount ?? 0}
+    
+    public var maxBid: Double {
+        guard let amount = items.max(by: {$0.amount <= $1.amount})?.amount else { return 0 }
+        return amount
+    }
+    
+    public var maxAsk: Double {
+        guard let amount = items.min(by: {$0.amount < $1.amount})?.amount else { return 0 }
+        return amount
+    }
     
     public var didUpdated: (() -> Void)?
     
@@ -31,7 +44,7 @@ public class Dom {
     }
     
     public func update(_ items: Array<OBItem>) {
-        let queue = DispatchQueue.global(qos: .background)
+        let queue = DispatchQueue.global(qos: .utility)
         queue.async{
             DispatchQueue.main.async {
                 for item in items {

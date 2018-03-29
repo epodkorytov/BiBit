@@ -11,13 +11,14 @@ import Foundation
 
 public class BiBitService {
     //MARK: - Private
-    private var config: BiBitCoreConfigProtocol
-    private var socket: WebSocket
+    fileprivate var config: BiBitCoreConfigProtocol
+    fileprivate var socket: WebSocket
     
     //MARK: - Public
     public var dom = Dom()
     
     public var didUpdated: (() -> Void)?
+    public var lastDate: Date?
     
     public var didConnected: (() -> Void)?
     public var didDisconnected: (() -> Void)?
@@ -74,12 +75,16 @@ public class BiBitService {
         socket.ping()
     }
     
+    public func ping(){
+        socket.ping()
+    }
+    
     public func disconnect(){
         socket.close()
     }
     
     fileprivate func messageReceive(_ message: String) {
-        //print("reseive => \(message)")
+        print("reseive => \(message)")
         
         let stack = message.split { separator -> Bool in
             return separator == "[" || separator == "]"
@@ -95,5 +100,7 @@ public class BiBitService {
 
         //
         dom.update(items)
+        
+        self.lastDate = Date()
     }
 }

@@ -19,6 +19,14 @@ class ViewController: UIViewController {
         
         
         BiBitCore.shared.service?.connect()
+        BiBitCore.shared.sheduler.action = {
+            if let lastDate = BiBitCore.shared.service?.lastDate {
+                if Date().timeIntervalSince(lastDate) >= 1*60.0 {
+                    BiBitCore.shared.service?.ping()
+                }
+            }
+            
+        }
         
         BiBitCore.shared.service?.didUpdated = {
             //print("DOM updated => bid.max is \(String(format: "%.5f", (BiBitCore.shared.service?.dom.maxBid)!)), bid.cnt is \(String(describing: BiBitCore.shared.service?.dom.bid.count)), ask.max is \(String(format: "%.5f", (BiBitCore.shared.service?.dom.maxAsk)!)), ask.cnt is \(String(describing: BiBitCore.shared.service?.dom.ask.count))")

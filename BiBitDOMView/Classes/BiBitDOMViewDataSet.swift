@@ -15,7 +15,7 @@ public protocol BiBitDOMViewDataSetItemProtocol {
 }
 
 
-public struct BiBitDOMViewDataSetItem: BiBitDOMViewDataSetItemProtocol {
+public class BiBitDOMViewDataSetItem: BiBitDOMViewDataSetItemProtocol {
     public var max: Double
     public var price: Int
     public var amount: Double

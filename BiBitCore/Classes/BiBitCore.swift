@@ -15,14 +15,15 @@ public class BiBitCore {
     public static let shared = BiBitCore()
     
     //MARK: - Private
-    fileprivate var sheduler: BiBitSheduler?
+    //fileprivate var sheduler = BiBitSheduler()
     
     //MARK: - Public
     public var service: BiBitService?
-    
+    public var sheduler = BiBitSheduler()
     
     
     public init(){
+        sheduler.start()
         
     }
     

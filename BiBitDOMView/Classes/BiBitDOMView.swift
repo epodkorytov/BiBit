@@ -13,7 +13,7 @@ public enum BiBitDOMViewType: Int {
 public class BiBitDOMView: UIView {
     public var dataSet: BiBitDOMViewDataSetProtocol? {
         didSet{
-            //print("bid: \(dataSet?.bid.count) items, ask: \(dataSet?.ask.count) items")
+            print("bid: \(String(describing: dataSet?.bid.count)) items, ask: \(String(describing: dataSet?.ask.count)) items")
             reloadData()
         }
     }
@@ -53,12 +53,14 @@ public class BiBitDOMView: UIView {
         let queue = DispatchQueue.global(qos: .userInteractive)
         
         queue.async{
-            if let dataSet = self.dataSet {
+            if let bid = self.dataSet?.bid {
                 DispatchQueue.main.async {
-                    self.bidView.dataSet = dataSet.bid
+                    self.bidView.dataSet = bid
                 }
+            }
+            if let ask = self.dataSet?.ask {
                 DispatchQueue.main.async {
-                    self.askView.dataSet = dataSet.ask
+                    self.askView.dataSet = ask
                 }
             }
         }
