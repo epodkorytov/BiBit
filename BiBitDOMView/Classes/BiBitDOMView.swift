@@ -13,7 +13,7 @@ public enum BiBitDOMViewType: Int {
 public class BiBitDOMView: UIView {
     public var dataSet: BiBitDOMViewDataSetProtocol? {
         didSet{
-            print("bid: \(String(describing: dataSet?.bid.count)) items, ask: \(String(describing: dataSet?.ask.count)) items")
+            //print("bid: \(String(describing: dataSet?.bid.count)) items, ask: \(String(describing: dataSet?.ask.count)) items")
             reloadData()
         }
     }
